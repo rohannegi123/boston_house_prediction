@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Predict Boston houses pricing</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <input type="number" name="CRIM" id="CRIM" placeholder="per capita crime rate by town"  step="any">
+            <input type="number" name="ZN" id="ZN" placeholder="proportion of residential land zoned for lots over 25,000 sq.ft. Score"  step="any">
+            <input type="number" name="INDUS" id="INDUS" placeholder="proportion of non-retail business acres per town."  step="any">
+            <input type="number" name="CHAS" id="CHAS" placeholder="Charles River dummy variable (1 if tract bounds river; 0 otherwise)" step="any">
+            <input type="number" name="NOX" id="NOX" placeholder="nitric oxides concentration (parts per 10 million)"  step="any">
+            <input type="number" name="RM" id="RM" placeholder="average number of rooms per dwelling"  step="any">
+            <input type="number" name="AGE" id="AGE" placeholder="proportion of owner-occupied units built prior to 1940"  step="any">
+            <input type="number" name="DIS" id="DIS" placeholder="weighted distances to five Boston employment centres"  step="any">
+            <input type="number" name="RAD" id="RAD" placeholder="index of accessibility to radial highways"  step="any">
+            <input type="number" name="TAX" id="TAX" placeholder="full-value property-tax rate per $10,000"  step="any">
+            <input type="number" name="PTRATIO" id="PTRATIO" placeholder="pupil-teacher ratio by town"  step="any">
+            <input type="number" name="B" id="B" placeholder="1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town"  step="any">
+            <input type="number" name="LSTAT" id="LSTAT" placeholder="% lower status of the population" step="any" >
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+{% endblock %}
