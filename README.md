@@ -13,12 +13,12 @@ A model like this would be very valuable for a real state agent who could make u
 I have taken Housing dataset which contains information about different houses in Boston. This data was originally a part of UCI Machine Learning Repository and has been removed now. We can also access this data from the scikit-learn library. There are 506 samples and 13 feature variables in this dataset. The objective is to predict the value of prices of the house using the given features.
 
 I have build 6 models in the project-
-* linearregression
-* lasso
-* ridge
-* elactic
+* Linear regression
+* Lasso 
+* Ridge
+* Elastic Regressor
 * XGBoost
-* random forest
+* Random forest
 
 The random forest model has the highest accuracy and best prediction , So i have used the random forest model for the prediction
 
