@@ -21,3 +21,9 @@ I have build 6 models in the project-
 * random forest
 
 The random forest model has the highest accuracy and best prediction , So i have used the random forest model for the prediction
+
+
+
+
+# Project deployed in heroku 
+- https://bostomn-house-prediction.herokuapp.com/
