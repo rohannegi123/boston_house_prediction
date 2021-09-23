@@ -1,0 +1,23 @@
+
+#  1 .Building the model
+  'linear regression prediction boston house pricing.ipynb'
+- Read the dataset 
+- Do EDA 
+- Build models
+- select the best model
+- save the model using pickle
+
+# 2. Creating an api for deployement
+   'app.py'
+- loading the regression model in the api
+
+# 3. Deployement in Heroku
+  - Create account on heroku and github
+  - Download and install git and heroku cli in your pc
+  - pip install gunicorn
+  -pip freeze>requirements.txt
+  -Create a empty "Procfile"
+    web: gunicorn main:app
+
+------link github repo
+------ Push in heroku
